@@ -1,8 +1,8 @@
 package com.jjg297;
 
-public class Sorts
+class Sorts
 {
-    public int[] bubbleSort(int[] in_array)
+    static int[] bubbleSort(int[] in_array)
     {
         int[] return_array = in_array;
         int end_flag = 1;

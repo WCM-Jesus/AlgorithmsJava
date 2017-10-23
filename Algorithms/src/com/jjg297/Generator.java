@@ -7,14 +7,14 @@ class Generator {
     int[] generate_array(int size)
     {
         int[] return_array = new int[size];
-        Random random_gen = new Random(2147483647);
+        Random random_gen = new Random();
 
         for(int i=0; i<size; i++)
         {
-            int temp = random_gen.nextInt();
+            int temp = random_gen.nextInt(2000);
             while(temp < 0)
             {
-                temp = random_gen.nextInt();
+                temp = random_gen.nextInt(2000);
             }
 
             return_array[i] = temp;

@@ -26,6 +26,7 @@ public class Main {
                 in_array = array_generator.generate_array(10);
 
                 out.println(Arrays.toString(in_array));
+                out.println(Arrays.toString(Sorts.bubbleSort(in_array)));
                 break;
             case 3:
                 // Enter some generation text
@@ -33,6 +34,7 @@ public class Main {
                 in_array = array_generator.generate_array(Integer.parseInt(args[3]));
 
                 out.println(Arrays.toString(in_array));
+                out.println(Arrays.toString(Sorts.bubbleSort(in_array)));
 
                 break;
             default:
