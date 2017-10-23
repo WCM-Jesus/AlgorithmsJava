@@ -31,7 +31,7 @@ public class Main {
             case 3:
                 // Enter some generation text
                 String alg_select = "none";
-                in_array = array_generator.generate_array(Integer.parseInt(args[3]));
+                in_array = array_generator.generate_array(Integer.parseInt(args[2]));
 
                 out.println(Arrays.toString(in_array));
                 out.println(Arrays.toString(Sorts.bubbleSort(in_array)));
